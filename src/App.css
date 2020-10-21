@@ -2,37 +2,119 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editorContainer {
+  padding: 4em 1em 1em 1em;
+  margin: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editors {
+  border: 1px transparent solid;
+  padding: 1.5em 2em 2.75em 2em;
+  margin: 1.25em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+  font-size: 100%;
+  letter-spacing: 1.2px;
+  border-radius: 6px;
+  text-align: left;
+  line-height: 1.5em;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+button {
+  border-radius: 2px;
+  margin: 0.25em;
+  width: 2.3em;
+  font-family: "Times";
+  line-height: 200%;  
+  background-image: linear-gradient(-225deg, #fffeff 0%, white 100%);
+  border: none;
+  color: #263135;
 }
 
-.App-link {
-  color: #61dafb;
+button.underline {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.underline,
+.bold,
+.italic,
+.highlight {
+  font-size: 12px;
+  text-align: center;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+html {
+  background: linear-gradient(to bottom left, #ff5370 0%, #ff9a9e 100%);
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.editors {
+  background-color: white;
+}
+
+a:link,
+a:visited {
+  color: radial-gradient(#16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+styleButton#bold {
+  font-weight: 800;
+}
+
+.styleButton#italic {
+  font-style: italic;
+  font-family: "PT Serif";
+}
+
+.styleButton#underline {
+  text-decoration: underline;
+}
+
+.material-icons {
+  font-size: 90%;
+}
+
+.styleButton,
+#link_url,
+.highlight {
+  padding: 0.01em;
+	background-image: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+	border: none;
+	margin: 0.35em;
+	width: 2.75em;
+	font-family: "Open Sans";
+	font-size: 13px;
+	height: 2.25em;
+	border-radius: 4px;
+}
+.RichEditor-styleButton,
+.RichEditor-controls{
+  padding: 0.5em;
+	background-image: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+	border: none;
+	margin: 0.35em;
+	width: 2.75em;
+	font-family: "Open Sans";
+	font-size: 13px;
+	height: 2.25em;
+	border-radius: 4px;
+}
+
+.toolbar {
+	text-align: center;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.RichEditor-activeButton {
+	color: black;
+  
 }
